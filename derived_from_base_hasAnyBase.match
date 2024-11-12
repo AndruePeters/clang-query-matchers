@@ -1,0 +1,10 @@
+# This matches a record declaration type with a base of "Base"
+cxxRecordDecl(
+    hasAnyBase(
+        hasType(
+            cxxRecordDecl(
+                hasName("Base")
+            )
+        )
+    )
+).bind("ast_example")
