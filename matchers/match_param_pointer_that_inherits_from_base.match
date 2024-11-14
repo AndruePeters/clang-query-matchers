@@ -1,0 +1,13 @@
+m parmVarDecl (
+    hasType(
+        pointerType(
+            pointee (
+                hasDeclaration(
+                    cxxRecordDecl(
+                        isSameOrDerivedFrom("Base")
+                    )
+                )
+            )
+        )
+    )
+)
